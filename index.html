@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map-Alibut | PSAU Strategic Spatial Directory</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗺️</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-8 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-lg">
+        <div class="glass-dock py-4 px-10 flex justify-between items-center rounded-[2.5rem] shadow-2xl">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl">🗺️</span>
+                <span class="font-800 text-[10px] tracking-[0.3em] uppercase text-[#1B4332]">Map-Alibut</span>
+            </div>
+            <div class="flex gap-10">
+                <a href="index.html" class="text-[10px] font-800 text-[#1B4332] border-b-2 border-[#FFD60A] pb-1 tracking-widest">HOME</a>
+                <a href="contact.html" class="text-[10px] font-500 text-stone-400 hover:text-[#1B4332] transition-colors tracking-widest uppercase">Operations</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-56 pb-24 px-6 text-center">
+        <div class="container mx-auto">
+            <div class="inline-flex items-center gap-2 bg-[#1B4332]/5 px-5 py-2 rounded-full text-[9px] font-800 uppercase tracking-[0.4em] text-[#1B4332] mb-10">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#FFD60A] animate-pulse"></span>
+                Spatial Intelligence Portal
+            </div>
+            <h1 class="text-6xl md:text-[7rem] font-800 tracking-[-0.05em] leading-[0.9] text-[#1B4332] mb-8">
+                Map-Alibut <br> <span class="opacity-30">ning PSAU.</span>
+            </h1>
+            <p class="text-lg md:text-xl font-medium text-stone-500 max-w-2xl mx-auto mb-14 leading-relaxed">
+                The definitive spatial companion for the PSAU ecosystem.
+            </p>
+            <a href="#map-core" class="btn-haptic inline-flex bg-[#1B4332] text-white px-12 py-6 font-800 text-xs tracking-[0.3em] uppercase shadow-2xl shadow-[#1B4332]/20">
+                Initialize System
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 pb-40 space-y-6">
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-12 lg:col-span-7 bento-card squircle p-12 md:p-20 relative overflow-hidden">
+                <h3 class="text-[10px] font-800 text-[#FFD60A] uppercase tracking-[0.5em] mb-8 bg-[#1B4332] inline-block px-4 py-1.5 rounded-full">Legacy</h3>
+                <h2 class="text-3xl md:text-4xl font-800 text-[#1B4332] mb-8 tracking-tight">A Century of Agricultural Excellence.</h2>
+                <div class="text-stone-500 leading-relaxed text-sm space-y-4">
+                    <p>The roots of Pampanga State Agricultural University trace back to 1918 as the Magalang Farm School. Over a century, it transitioned to the Pampanga Agricultural College in 1974, eventually achieving University status in 2015.</p>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-5 bento-card squircle overflow-hidden p-3 bg-white shadow-2xl">
+                <iframe class="w-full h-full min-h-[400px]" src="https://www.youtube.com/embed/g68LkYW5pRs?start=3" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-12 lg:col-span-4 bento-card squircle p-10 bg-emerald-50/20">
+                <h3 class="text-[10px] font-800 text-[#1B4332] uppercase tracking-[0.4em] mb-4">Core Directory</h3>
+                <h2 class="text-2xl font-800 text-[#1B4332]">Map-Alibut v1.0</h2>
+                <p class="mt-8 text-stone-500 text-sm italic">Precision in every pixel.</p>
+            </div>
+            <div class="col-span-12 lg:col-span-8 bento-card squircle p-12 md:p-16">
+                <h2 class="text-2xl md:text-3xl font-800 text-[#1B4332] mb-8">About the Platform</h2>
+                <div class="grid md:grid-cols-2 gap-10 text-stone-500 text-sm">
+                    <p>Map-Alibut is a bespoke spatial intelligence tool engineered for the PSAU community, bridging the gap between physical campus growth and digital accessibility.</p>
+                    <p>Utilizing high-precision geospatial data, the platform provides a low-friction experience for students to locate facilities with 100% accuracy.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="map-core" class="col-span-12 bento-card squircle p-4 md:p-10 bg-white">
+            <div class="rounded-[3rem] overflow-hidden h-[750px] w-full shadow-inner">
+                <iframe src="https://felt.com/embed/map/MAP-ALIBUT-Lbswdp7qT79BkLvLcVZvqeD?loc=15.21779,120.6972018,20.41z" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
