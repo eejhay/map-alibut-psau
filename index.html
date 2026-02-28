@@ -14,20 +14,20 @@
             min-height: 100vh;
             background-color: #fbfbfd;
             background-image: 
-                radial-gradient(at 0% 0%, rgba(27, 67, 50, 0.2) 0px, transparent 50%),
-                radial-gradient(at 100% 0%, rgba(255, 214, 10, 0.25) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, rgba(27, 67, 50, 0.15) 0px, transparent 50%),
-                radial-gradient(at 0% 100%, rgba(255, 214, 10, 0.2) 0px, transparent 50%);
+                radial-gradient(at 0% 0%, rgba(27, 67, 50, 0.2) 0%, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(255, 214, 10, 0.25) 0%, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(27, 67, 50, 0.15) 0%, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(255, 214, 10, 0.2) 0%, transparent 50%);
             background-attachment: fixed;
+            background-size: 120% 120%; /* Makes animation smoother */
             animation: move-bg 20s ease infinite alternate;
         }
 
         @keyframes move-bg {
             0% { background-position: 0% 0%; }
-            100% { background-position: 15% 15%; }
+            100% { background-position: 10% 10%; }
         }
 
-        /* Essential for lively feel: makes your cards semi-transparent to see the background */
         .bento-card {
             background: rgba(255, 255, 255, 0.5) !important;
             backdrop-filter: blur(20px) saturate(180%);
@@ -63,19 +63,19 @@
             <p class="text-lg md:text-xl font-medium text-stone-500 max-w-2xl mx-auto mb-14 leading-relaxed">
                 The definitive spatial companion for the PSAU ecosystem.
             </p>
-            <a href="#map-core" class="btn-haptic inline-flex bg-[#1B4332] text-white px-12 py-6 font-800 text-xs tracking-[0.3em] uppercase shadow-2xl shadow-[#1B4332]/20">
+            <a href="#map-core" class="btn-haptic inline-flex bg-[#1B4332] text-white px-12 py-6 font-800 text-xs tracking-[0.3em] uppercase shadow-2xl shadow-[#1B4332]/20 rounded-full">
                 Initialize System
             </a>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 pb-40 space-y-6">
+    <main class="container mx-auto px-6 pb-12 space-y-6">
         <div class="grid grid-cols-12 gap-6">
             <div class="col-span-12 lg:col-span-7 bento-card squircle p-12 md:p-20 relative overflow-hidden">
                 <h3 class="text-[10px] font-800 text-[#FFD60A] uppercase tracking-[0.5em] mb-8 bg-[#1B4332] inline-block px-4 py-1.5 rounded-full">Legacy</h3>
                 <h2 class="text-3xl md:text-4xl font-800 text-[#1B4332] mb-8 tracking-tight">A Century of Agricultural Excellence.</h2>
                 <div class="text-stone-500 leading-relaxed text-sm space-y-4">
-                    <p>Pampanga State Agricultural University (PSAU) is a 500-hectare institution in Magalang, Pampanga, dedicated to "HUMANE" development. Founded in 1885, it offers 25 accredited programs to 7,000+ students and is globally recognized for agricultural innovations like its patented sweet tamarind. Through advanced research and international partnerships, PSAU remains a leader in sustainable agriculture and community development.</p>
+                    <p>Pampanga State Agricultural University (PSAU) is a 500-hectare institution in Magalang, Pampanga, dedicated to "HUMANE" development. Founded in 1885, it offers 25 accredited programs to 7,000+ students and is globally recognized for agricultural innovations like its patented sweet tamarind.</p>
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-5 bento-card squircle overflow-hidden p-3 bg-white shadow-2xl">
@@ -114,10 +114,4 @@
     
     <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-
